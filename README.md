@@ -1,3 +1,3 @@
-C++ ders örnekleri
-Hackerrank
-Project-Euler
+C++ ders örnekleri,
+Hackerrank,
+Project-Euler,
