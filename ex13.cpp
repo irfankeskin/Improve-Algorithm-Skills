@@ -118,3 +118,84 @@ int main()
 		cout << endl;
 	}
 }
+/*
+		*
+	   **
+	  ***
+	   **
+	    *
+*/
+
+
+#include <iostream>
+using namespace std;
+void print(int size,char ch)
+{
+	for(int i = 0;i < size;i++)
+	{
+		cout << ch;
+	}
+}
+int main(void)
+{
+	cout << "Boyut giriniz : ";
+	int n;
+	cin >> n;
+	int star;
+	int space;
+	for(int i = 0;i < n;i++)
+	{
+		if(i < n / 2 + 1)
+		{
+			space = n / 2 - i;
+			star = star + 1;
+			print(space,' ');
+			print(star,'*');
+			cout << endl;
+		}
+		else
+		{
+			space = space + 1;
+			star = star - 1;
+			print(space,' ');
+			print(star,'*');
+			cout << endl;
+		}
+	}
+	return 0;
+}
+/*
+	*
+	**
+	***
+	****
+	***
+	**
+	*
+*/
+#include <iostream>
+using namespace std;
+void print(int size,char ch)
+{
+	for(int i = 0;i < size; i++)
+	{
+		cout << ch;
+	}
+}
+int main()
+{
+	cout << "Boyut giriniz : ";
+	int n;
+	cin >> n;
+	int star;
+	for(int i = 0;i < n;i++)
+	{
+		if(i < n / 2 + 1)
+		star = star + 1;
+		else
+		star = star - 1;
+		print(star,'*');
+		cout << endl;
+	}
+	return 0;
+}
